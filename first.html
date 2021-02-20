@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box;}
+    h1{
+        color: white;
+        font-weight: bold;
+        font-size: 50px;
+        margin-top: 0px;
+        padding-top: 0px;
+        float: left;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+    form{
+        margin-left: 450px;
+        margin-right: 450px;
+        margin-top: 100px;
+        
+        align-content: center;
+        text-align: center;
+        align-items: center;
+        color: saddlebrown;
+        font-size: 20px;
+        background-color: white;
+    }
+    p1 {
+    width: 100%;
+        float:right;
+        padding-left: 0%;
+        margin-top: 2px;
+        color: white;
+        background-color: black;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    
+}
+    .new{
+        float: left;
+        padding-top: 45px;
+        padding-right: 0px;
+        padding-left: 20px;
+        
+    }
+    
+.topnav {
+  overflow: hidden;
+  background-color: white;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: saddlebrown;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: antiquewhite;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: burlywood;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+.bbo {
+    background-image:url('download.jpg')
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding-top: 14px;
+      padding-bottom: 0px;
+      padding-left: ;14px
+      padding-right: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+    .mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
+</head>
+<body style="background-image: url('cropped-hand-holding-ground-protein-in-scoop-at-royalty-free-image-1589373439.jpg'); background-repeat: no-repeat; background-attachment: fixed;
+  background-size: cover;">
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <!--<div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search the item" name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>-->
+</div>
+<div class="bbo">
+<div style="padding-left:16px">
+  <h1>AUTHENTICATION CHECK</h1>
+</div>
+    </div>
+    <form style="align-content: center; align-items: center; opacity: 95%;">
+        <br>
+  <label for="fname">Product Name:</label>
+        <br>
+  <input type="text" id="fname" name="fname" style="align-items: center"><br><br>
+        <button onclick="myFunction()" style="color: white; background-color: saddlebrown;">Click me</button>
+
+<p id="demo"></p>
+
+        <br>
+</form>
+    
+
+
+<script>
+    function myFunction() {
+  document.getElementById("demo").innerHTML = "IT'S A GOOD PRODUCT!";
+}
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>
