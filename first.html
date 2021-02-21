@@ -166,7 +166,12 @@ body {
     function myFunction() {
         var x = document.getElementById("fname").value;
         x = x.substring(0, 4);
-  document.getElementById("demo").innerHTML = x;
+        if(x==1001){
+  document.getElementById("demo").innerHTML = "IT'S A GOOD PRODUCT";
+        }
+        else{
+            document.getElementById("demo").innerHTML = "IT'S A BAD PRODUCT";
+        }
 }
 var slideIndex = 1;
 showDivs(slideIndex);
